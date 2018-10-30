@@ -1,0 +1,17 @@
+// # programme14
+// recursove factorial
+#include<stdio.h>
+int main()
+{
+    int n,c;
+    scanf("%d",&n);
+    c=multiply(n);
+    printf("factorial of %d is %d",n,c);
+}
+multiply(int n)
+{
+    if(n>=1)
+        return n*multiply(n-1);
+     else
+         return 1;
+}
